@@ -274,9 +274,12 @@ func (d *LambdaPackageDataSource) Read(ctx context.Context, req datasource.ReadR
 
 	zipWriter := zip.NewWriter(packageFile)
 
+	buildFileArray := strings.Split(fullEntrypointPath, "/")
+	buildFileName := strings.Replace(buildFileArray[len(buildFileArray)-1], ".ts", ".mjs", 1)
+
 	//nolint:exhaustruct // too many props to be useful
 	indexDotJs, err := zipWriter.CreateHeader(&zip.FileHeader{
-		Name:     "index.mjs",
+		Name:     buildFileName,
 		Method:   zip.Deflate,
 		Modified: time.Date(2020, 8, 31, 0, 0, 0, 0, time.UTC),
 	})
