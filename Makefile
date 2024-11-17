@@ -1,5 +1,5 @@
 TEST?=$$(go list ./... | grep -v 'vendor')
-HOSTNAME=jsherz
+HOSTNAME=calxus
 NAME=node-lambda-packager
 BINARY=terraform-provider-${NAME}
 VERSION=1.3.1
