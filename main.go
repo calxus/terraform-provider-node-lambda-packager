@@ -6,7 +6,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-	"github.com/jSherz/terraform-provider-node-lambda-packager/internal/provider"
+	"github.com/calxus/terraform-provider-node-lambda-packager/internal/provider"
 )
 
 // Run "go generate" to format example terraform files and generate the docs for the registry/website
@@ -33,7 +33,7 @@ func main() {
 	flag.Parse()
 
 	opts := providerserver.ServeOpts{
-		Address:         "registry.terraform.io/jSherz/node-lambda-packager",
+		Address:         "registry.terraform.io/calxus/node-lambda-packager",
 		Debug:           debug,
 		ProtocolVersion: frameworkProviderVersion,
 	}
