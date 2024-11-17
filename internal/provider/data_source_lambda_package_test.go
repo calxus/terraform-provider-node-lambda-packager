@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/jSherz/terraform-provider-node-lambda-packager/internal/provider"
+	"github.com/calxus/terraform-provider-node-lambda-packager/internal/provider"
 	"github.com/stretchr/testify/assert"
 )
 
