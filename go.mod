@@ -1,4 +1,4 @@
-module github.com/jSherz/terraform-provider-node-lambda-packager
+module github.com/calxus/terraform-provider-node-lambda-packager
 
 go 1.23.1
 
